@@ -23,7 +23,7 @@
                     <div class="col-sm-6">
                         <!-- Left Col -->
                         <div class="list-group">
-                            <a href="http://www.collegelifeapp.com/" target="_blank" class="list-group-item">
+                            <a href="http://www.motelife.co" target="_blank" class="list-group-item">
                                 <h4 class="list-group-item-heading">Summer Intern - Mote
                                     <br />
                                     <small>May - August 2015</small></h4>

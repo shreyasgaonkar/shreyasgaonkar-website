@@ -64,25 +64,27 @@
                                         <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank">Resume</a>
                                     </li>
                                     <li>
+                                        <a href="#">Websites</a>
+                                    </li>
+                                    <li>
+                                        <a href="projects.aspx">Projects</a>
+                                    </li>
+                                    <li>
                                         <a href="technical-paper.aspx">Papers</a>
                                     </li>
                                     <li>
                                         <a href="photos.aspx">Photos</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Websites</a>
-                                    </li>
-
+                                    
+                                    
                                     <li class="divider"></li>
-                                    <li class="dropdown-header">More Services
+                                    <li class="dropdown-header">Find me at 
                                     <!-- Just to give idea what is going to show up next-->
                                     </li>
                                     <li>
-                                        <a href="#">Music</a>
+                                        <a href="https://github.com/shreyasgaonkar" target="_blank">GitHub</a>
                                     </li>
-                                    <li>
-                                        <a href="projects.aspx">Projects</a>
-                                    </li>
+                                    
                                 </ul>
                                 <!-- End dropdown-menu-->
                             </li>
