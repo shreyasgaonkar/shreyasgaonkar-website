@@ -5,24 +5,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
    <title>Photos - Shreyas Gaonkar</title>
-    <meta name="description" content="Shreyas Gaonkar website - Portfolio">
+    <meta name="description" content="Shreyas Gaonkar website - Portfolio" />
     <link href="shreyasgaonkar.ico" rel="icon" type="image/x-icon" />
 
     <!-- Mobile viewport optimized -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet" />
 
     <!-- myCSS -->
-    <link href="includes/css/styles.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet" />
 
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
 
+    <!-- Img JQuery -->
+        <link rel="stylesheet" type="text/css" href="JQuery/this/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="JQuery/this/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="JQuery/this/css/elastislide.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
     
-
+    <noscript>
+			<style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
+		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
 
 </head>
 <body>
@@ -105,111 +134,51 @@
                 </div><!--end NavCollapse-->
             </div>
         </div><!--End Nav Div-->
-        <div class="carousel slide" id="myCarousel">
-
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li class="active" data-slide-to="0" data-target="#myCarousel1"></li><!--data-slide-to="0" used to select the first element-->
-                <li data-slide-to="1" data-target="#myCarousel1"></li>
-                <li data-slide-to="2" data-target="#myCarousel1"></li>
-                <li data-slide-to="3" data-target="#myCarousel1"></li>
-            </ol>
-
-
-            <!-- Wrapper for slides-->
-
-            <div class="carousel-inner">
-                <div class="item active" id="slide1">
-
-                    <div class="carousel-caption">
-                        <h4>Grad Student</h4>
-                        <p class="text-center">
-                            Electrical and Computer Engineering, <br />
-                            University of Illinois at Chicago
-                        </p>
-                    </div><!-- End Carosel Caption-->
-                </div><!-- end Item-->
-
-                <div class="item" id="slide4">
-                    <div class="carousel-caption">
-                        <h4>Web Developer</h4>
-                        <p class="text-center">
-                            Skills: HTML5, CSS3, Bootstrap 3, JQuery, JavaScript, ASP.net
-                        </p>
-                    </div><!-- End Carosel Caption-->
-                </div><!-- end Item-->
-
-                <div class="item" id="slide3">
-                    <div class="carousel-caption">
-                        <h4>Amateur Photographer</h4>
-                        <p class="text-center">
-                            Always on my toe to be better than yesterday,<br /> check out my work below
-                        </p>
-                    </div><!-- End Carosel Caption-->
-                </div><!-- end Item-->
-
-                <div class="item" id="slide2">
-                    <div class="carousel-caption">
-                        <h4>Guitarist & Keyboard</h4>
-                        <p class="text-center">
-                            Love to pick up Music in spare time
-                        </p>
-                    </div><!-- End Carosel Caption-->
-                </div><!-- end Item-->
-
-
-
-
-
-            </div><!-- End Carousel Inner-->
-            <!-- Controls-->
-
-            <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-            <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-
-        </div><!--End my carousel-->
-        <div class="row" id="bigCallout">
-
-            <div class="col-12">
-
-                
-
-                <div class="well well-small visible-sm">
-                    <!--Visible-sm means that it will only pops when on smaller mobile devices-->
-                    <a href="mailto:sgaonk2@uic.edu?subject=Email%20for%20your%20website" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-pencil"> Write to me</span></a><!--btn-block will span entire area-->
-                </div><!-- end well-small-->
-
-                <div class="alert alert-success alert-block fade in" id="successAlert">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-
-                    <h4>Haha!</h4>
-                    <p>That was fun!</p>
-                </div><!-- end alert -->
-
-                <div class="well">
-                    <div class="page-header">
-                        <h1>Greetings! <small>Thanks for stopping-by</small></h1>
-                    </div><!-- end page-header-->
-
-                    <p class="lead">
-                        <!--LEading text stands out, makes it awesome-->
-                        Hi, Shreyas here. I'm a web developer, I design websites with HTML5, CSS3, JQuery and SQL for desktops and optimized to mobile platforms.
-                        I'm an amateur photographer in my spare time along, with some skills in playing guitar and keyboards. Learn more about me by clicking the link below.
-                    </p>
-                    
-                     <!-- AlertMe tag -->
-                    <!--<a href="#" class="btn btn-large btn-primary" id="alertMe">Poke !</a>-->
-                    <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank" class="btn btn-link btn-primary">View Resume</a>
-                </div><!-- End Well-->
-
-            </div><!-- End Col12-->
-
-        </div><!-- close bigCallout-->
-       
-
         
-
-
+        <div class="content" style="margin-top:50px;">
+				
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/1.jpg" data-large="JQuery/this/images/1.jpg" alt="image01" data-description="ABC" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/2.jpg" data-large="JQuery/this/images/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/3.jpg" data-large="JQuery/this/images/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/4.jpg" data-large="JQuery/this/images/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/5.jpg" data-large="JQuery/this/images/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/6.jpg" data-large="JQuery/this/images/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/7.jpg" data-large="JQuery/this/images/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/8.jpg" data-large="JQuery/this/images/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/9.jpg" data-large="JQuery/this/images/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/10.jpg" data-large="JQuery/this/images/10.jpg" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/11.jpg" data-large="JQuery/this/images/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/12.jpg" data-large="JQuery/this/images/12.jpg" alt="image12" data-description="The carcass of beauty spent and done" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/13.jpg" data-large="JQuery/this/images/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/14.jpg" data-large="JQuery/this/images/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven's fell rage" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/15.jpg" data-large="JQuery/this/images/15.jpg" alt="image15" data-description="Some beauty peep'd through lattice of sear'd age" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/16.jpg" data-large="JQuery/this/images/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/17.jpg" data-large="JQuery/this/images/17.jpg" alt="image17" data-description="Which on it had conceited characters" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/18.jpg" data-large="JQuery/this/images/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/19.jpg" data-large="JQuery/this/images/19.jpg" alt="image19" data-description="That season'd woe had pelleted in tears" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/20.jpg" data-large="JQuery/this/images/20.jpg" alt="image20" data-description="And often reading what contents it bears" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/21.jpg" data-large="JQuery/this/images/21.jpg" alt="image21" data-description="As often shrieking undistinguish'd woe" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/22.jpg" data-large="JQuery/this/images/22.jpg" alt="image22" data-description="In clamours of all size, both high and low" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/23.jpg" data-large="JQuery/this/images/23.jpg" alt="image23" data-description="Sometimes her levell'd eyes their carriage ride" /></a></li>
+									<li><a href="#"><img src="JQuery/this/images/thumbs/24.jpg" data-large="JQuery/this/images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+			</div><!-- content -->
+		
         
        
 
@@ -277,5 +246,14 @@
 
     <!-- Custom JS -->
     <script src="includes/js/script.js"></script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="JQuery/this/js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="JQuery/this/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="JQuery/this/js/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="JQuery/this/js/gallery.js"></script>
+
+
+
 </body>
 </html>
