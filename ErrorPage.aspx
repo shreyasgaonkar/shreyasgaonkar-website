@@ -1,27 +1,16 @@
-﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master"  CodeBehind="ErrorPage.aspx.cs" Inherits="WingtipToys.ErrorPage" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Error:</h2>
-    <p></p>
-    <asp:Label ID="FriendlyErrorMsg" runat="server" Text="Label" Font-Size="Large" style="color: red"></asp:Label>
+﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage.Master"  CodeBehind="ErrorPage.aspx.cs" %>
 
-    <asp:Panel ID="DetailedErrorPanel" runat="server" Visible="false">
-        <p>&nbsp;</p>
-        <h4>Detailed Error:</h4>
-        <p>
-            <asp:Label ID="ErrorDetailedMsg" runat="server" Font-Size="Small" /><br />
-        </p>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+   
+    <title>Error 404 - Page Not Found</title>
+</asp:Content>
 
-        <h4>Error Handler:</h4>
-        <p>
-            <asp:Label ID="ErrorHandler" runat="server" Font-Size="Small" /><br />
-        </p>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <h4>Detailed Error Message:</h4>
-        <p>
-            <asp:Label ID="InnerMessage" runat="server" Font-Size="Small" /><br />
-        </p>
-        <p>
-            <asp:Label ID="InnerTrace" runat="server"  />
-        </p>
-    </asp:Panel>
+    <div class="container" style="margin-top:100px; height:70vh;">
+        <h1>Error 404 - Page not Found</h1>
+
+        <p>The URL that you are trying to access might be invalid or removed</p>
+    </div>
+
 </asp:Content>

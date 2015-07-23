@@ -35,46 +35,5 @@
 
     }
 
-    void Application_Error(object sender, EventArgs e)
-    {
-        Exception exc = Server.GetLastError();
-
-        if (exc is HttpUnhandledException)
-        {
-            // Pass the error on to the error page.
-            Server.Transfer("ErrorPage.aspx?handler=Application_Error%20-%20Global.asax", true);
-        }
-    }
     
-     /*private void Page_Error(object sender, EventArgs e)
-        {
-            Exception exc = Server.GetLastError();
-
-            // Handle specific exception.
-            if (exc is HttpUnhandledException)
-            {
-                ErrorMsgTextBox.Text = "An error occurred on this page. Please verify your " +                  
-                "information to resolve the issue."
-            }
-            // Clear the error from the server.
-            Server.ClearError();
-        }*/
-
-    void Application_Error(object sender, EventArgs e)
-    {
-        // Code that runs when an unhandled error occurs.
-
-        // Get last error from the server
-        Exception exc = Server.GetLastError();
-
-        if (exc is HttpUnhandledException)
-        {
-            if (exc.InnerException != null)
-            {
-                exc = new Exception(exc.InnerException.Message);
-                Server.Transfer("ErrorPage.aspx?handler=Application_Error%20-%20Global.asax",
-                    true);
-            }
-        }
-    }
 </script>
