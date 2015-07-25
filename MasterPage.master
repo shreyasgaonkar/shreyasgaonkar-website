@@ -1,10 +1,9 @@
-﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <!-- Website Title & Description for Search Engine purposes -->
     
     <meta name="description" content="Shreyas Gaonkar website - Portfolio">
     <link href="shreyasgaonkar.ico" rel="icon" type="image/x-icon" />
@@ -21,158 +20,159 @@
 
     <!-- Include Modernizr in the head, before any other Javascript -->
     <script src="includes/js/modernizr-2.6.2.min.js"></script>
-    <script src="includes/js/bloodhound.js"></script>
-    <script src="includes/js/bloodhound.min.js"></script>
-    <script src="includes/js/jquery-1.8.2.min.js"></script>
-    
-    <script src="includes/js/script.js"></script>
-    <script src="includes/js/typeahead.bundle.js"></script>
-    <script src="includes/js/typeahead.bundle.min.js"></script>
-    <script src="includes/js/typeahead.jquery.js"></script>
-    <script src="includes/js/typeahead.jquery.min.js"></script>
 
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
     
-        <div>
-            <div class="navbar navbar-fixed-top">
-                <!--Nav bar will stick to the top-->
-                <div class="container">
+    <div class="container" id="main">
+        <div class="navbar navbar-fixed-top">
+            <!--Nav bar will stick to the top-->
+            <div class="container">
 
-                    <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
 
-                    </button>
+                </button>
 
-                    <a class="navbar-brand" href="/">
-                        <img src="images/test-logo.png" alt="Shreyas Gaonkar logo" /></a>
+                <a class="navbar-brand" href="#/"><img src="images/test-logo.png" alt="Shreyas Gaonkar logo" title="Shreyas Gaonkar"/></a>
 
-                    <div class="nav-collapse collapse navbar-responsive-collapse">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="index.html"><span class="glyphicon glyphicon-home"> Home</span></a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a>
-                                <!--Class Caret gives the notion of that small triangle which indicates teh dropdown-->
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank">Resume</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Websites</a>
-                                    </li>
-                                    <li>
-                                        <a href="projects.aspx">Projects</a>
-                                    </li>
-                                    <li>
-                                        <a href="technical-paper.aspx">Papers</a>
-                                    </li>
-                                    <li>
-                                        <a href="photos.aspx">Photos</a>
-                                    </li>
-                                    
-                                    <li class="divider"></li>
-                                    <li class="dropdown-header">Find me at 
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="Default.aspx"><span class="glyphicon glyphicon-home"> Home</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a> <!--Class Caret gives the notion of that small triangle which indicates teh dropdown-->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank">Resume</a>
+                                </li>
+                                <li>
+                                    <a href="technical-paper.aspx">Papers</a>
+                                </li>
+                                <li>
+                                    <a href="photos.aspx">Photos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Websites</a>
+                                </li>
+
+                                <li class="divider"></li>
+                                <li class="dropdown-header">
+                                    Find me at
                                     <!-- Just to give idea what is going to show up next-->
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/shreyasgaonkar" target="_blank">GitHub</a>
-                                    </li>
-                                    
-                                </ul>
-                                <!-- End dropdown-menu-->
-                            </li>
-                        </ul>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/shreyasgaonkar" target="_blank">GitHub</a>
+                                </li>
+                                <li>
+                                    <a href="project.aspx">Projects</a>
+                                </li>
+                            </ul><!-- End dropdown-menu-->
+                        </li>
+                    </ul>
 
-                        <form class="navbar-form pull-left">
-                            <input type="text" class="form-control" placeholder="Search this site.." id="searchInput" />
-                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search "></span></button>
-                        </form>
-                        
-                        <!-- End nav pull-right-->
-                    </div>
-                    <!--end NavCollapse-->
-                </div>
+                    <form class="navbar-form pull-left">
+                        <input type="text" class="form-control" placeholder="Search this site.." id="searchInput" />
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search "></span></button>
+                    </form>
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- pull-right is float right-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul><!-- End nav pull-right-->
+                </div><!--end NavCollapse-->
             </div>
-            <!--End Nav Div-->
+        </div><!--End Nav Div-->
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div><!-- End Container -->
+   
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>&copy; 2015 Shreyas Gaonkar</h6>
+                shreyas.gaonkar@yahoo.com
+                </div><!-- end col-sm-2-->
 
+                <div class="col-sm-4">
+                    <h6>About Me</h6>
+                    <p>Actively seeking Summer Internship opportunities in the field of Software Engineering</p>
+                </div><!-- end col-sm-4-->
 
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="Default.aspx">Home</a></li>
+                        <li><a href="photos.aspx">Photos</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div><!-- end col-sm-2-->
 
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <h6>&copy; 2015 Shreyas Gaonkar</h6>
-                            shreyas.gaonkar@yahoo.com
-                        </div>
-                        <!-- end col-sm-2-->
+                <div class="col-sm-2">
+                    <h6>Follow Me</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="https://twitter.com/shreyasgaonkar" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/shreyas.gaonkar" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/user/lpfireheart" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.linkedin.com/in/shreyasgaonkar" target="_blank">LinkedIn</a></li>
 
-                        <div class="col-sm-4">
-                            <h6>About Me</h6>
-                            <p>Actively seeking Summer Internship opportunities in the field of Software Engineering</p>
-                        </div>
-                        <!-- end col-sm-4-->
+                    </ul>
+                </div><!-- end col-sm-2-->
 
-                        <div class="col-sm-2">
-                            <h6>Navigation</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="photos.aspx">Photos</a></li>
-                                <li><a href="#">Links</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <!-- end col-sm-2-->
-
-                        <div class="col-sm-2">
-                            <h6>Follow Me</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="https://twitter.com/shreyasgaonkar" target="_blank">Twitter</a></li>
-                                <li><a href="https://www.facebook.com/shreyas.gaonkar" target="_blank">Facebook</a></li>
-                                <li><a href="https://www.youtube.com/user/lpfireheart" target="_blank">YouTube</a></li>
-                                <li><a href="https://www.linkedin.com/in/shreyasgaonkar" target="_blank">LinkedIn</a></li>
-
-                            </ul>
-                        </div>
-                        <!-- end col-sm-2-->
-
-                        <div class="col-sm-2">
-                            <h6>Coded by Shreyas Gaonkar</h6>
-                            <!-- <ul class="list-unstyled">
+                <div class="col-sm-2">
+                    <h6>Coded by Shreyas Gaonkar</h6>
+                    <!-- <ul class="list-unstyled">
                          <li><a href="#">Twitter</a></li>
                          <li><a href="#">Facebook</a></li>
                          <li><a href="#">GooglePlus</a></li>
 
                      </ul>-->
-                        </div>
-                        <!-- end col-sm-2-->
+                </div><!-- end col-sm-2-->
 
 
-                    </div>
-                    <!-- End Row-->
-                </div>
-                <!-- end container-->
-            </footer>
-            <!-- All Javascript at the bottom of the page for faster page loading -->
-            <!-- First try for the online version of jQuery-->
-            <script src="http://code.jquery.com/jquery.js"></script>
+            </div><!-- End Row-->
+        </div><!-- end container-->
+    </footer>
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
 
-            <!-- If no online access, fallback to our hardcoded version of jQuery -->
-            <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 
-            <!-- Bootstrap JS -->
-            <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-            <!-- Custom JS -->
-            <script src="includes/js/script.js"></script>
-        </div>
-    
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+
+
 </body>
 </html>

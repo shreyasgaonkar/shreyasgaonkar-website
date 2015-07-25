@@ -73,7 +73,7 @@
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="index.html"><span class="glyphicon glyphicon-home"> Home</span></a>
+                            <a href="Default.aspx"><span class="glyphicon glyphicon-home"> Home</span></a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a> <!--Class Caret gives the notion of that small triangle which indicates teh dropdown-->
@@ -202,7 +202,7 @@
                 <div class="col-sm-2">
                     <h6>Navigation</h6>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Default.aspx">Home</a></li>
                         <li><a href="#/">Photos</a></li>
                         <li><a href="#">Links</a></li>
                         <li><a href="#">Contact</a></li>
