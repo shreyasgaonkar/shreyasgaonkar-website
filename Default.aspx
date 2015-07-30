@@ -152,12 +152,12 @@
             <!--for 3 columns, sm to stay in its layout-->
             <div class="panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Web Development</h3>
+                    <h3 class="panel-title">UX/UI Design</h3>
                 </div>
                 <!-- end panel heading-->
                 <img src="images/badge_web.jpg" alt="Web Dev" class="img-circle" />
 
-                <p>Coding Websites for more than two & half years gave me plenty of exposure in designing custom hand-coded responsive websites for different organizations</p>
+                <p>Start from blank canvas and design as per the client requirements including Typography and Color Scheme</p>
 
                 <a href="#/" class="btn btn-warning btn-block">HTML5, CSS3, Bootstrap 3</a>
             </div>
@@ -169,14 +169,13 @@
             <!--for 3 columns, sm to stay in its layout-->
             <div class="panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Amateur Photographer</h3>
+                    <h3 class="panel-title">Web Developement</h3>
                 </div>
                 <!-- end panel heading-->
                 <img src="images/badge_camera.jpg" alt="CSS3" class="img-circle" />
 
                 <p>
-                    I love clicking good photographs.<br />
-                    Needless to say the post-production in Adobe Photoshop or LightRoom.
+                   Developing fast and responsive websites optimzed for all mobile and tablets. 
                 </p>
 
                 <a href="#/" class="btn btn-danger btn-block">Click. Edit. Repeat</a>
@@ -189,14 +188,13 @@
             <!--for 3 columns, sm to stay in its layout-->
             <div class="panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Learning Music</h3>
+                    <h3 class="panel-title">Deloy & Upload  </h3>
                 </div>
                 <!-- end panel heading-->
                 <img src="images/badge_music.jpg" alt="Bootstrap3" class="img-circle" />
 
                 <p>
-                    Learning music off the internet to being in active Rock Band is indeed one thing I never dreamt<br />
-                    in my wildest dream.
+                    Websites are optimzed for better Search Engine rankings so that your business is not lost at the 3<sup>rd</sup> page of their website
                 </p>
 
                 <a href="#/" class="btn btn-info btn-block">EADGBe</a>
@@ -347,7 +345,7 @@
             <h4>About Me</h4>
             <div class="list-group" id="cursor">
                 <a href="#/" class="list-group-item ">
-                    <h4 class="list-group-item-heading">Master of Science, UIC <small>ECE</small></h4>
+                    <h4 class="list-group-item-heading">Master of Science, UIC <small>Computer Engineering</small></h4>
                     <p class="list-group-item-text "><strong>Related Coursework</strong>: Computer Algorithms, Development of Mobile Apps and Advanced Computer Communication Networks.</p>
                 </a>
                 <a href="#/" class="list-group-item">
