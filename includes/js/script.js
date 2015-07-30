@@ -31,6 +31,10 @@ $(function(){
 
     //TypeAhead JQuery
 
+    //Carousal Autoplay
+    $('.carousel').carousel({
+        interval: 2000
+    });
 
 
 });
