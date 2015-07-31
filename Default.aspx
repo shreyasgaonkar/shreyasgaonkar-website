@@ -141,7 +141,7 @@
 
     <div class="row" id="featuresHeading">
         <div class="col12">
-            <h2>What I love to do</h2>
+            <h2>How</h2>
 
         </div>
         <!-- end col12-->
@@ -155,9 +155,9 @@
                     <h3 class="panel-title">UX/UI Design</h3>
                 </div>
                 <!-- end panel heading-->
-                <img src="images/badge_web.jpg" alt="Web Dev" class="img-circle" />
+                <img src="images/badge_photoshop.jpg" alt="Web Dev" class="img-circle" />
 
-                <p>Start from blank canvas and design as per the client requirements including Typography and Color Scheme</p>
+                <p>Start from blank canvas and design as per the client requirements including UI/UX, Typography and Color-Scheme</p>
 
                 <a href="#/" class="btn btn-warning btn-block">HTML5, CSS3, Bootstrap 3</a>
             </div>
@@ -172,10 +172,10 @@
                     <h3 class="panel-title">Web Developement</h3>
                 </div>
                 <!-- end panel heading-->
-                <img src="images/badge_camera.jpg" alt="CSS3" class="img-circle" />
+                <img src="images/badge_code.jpg" alt="CSS3" class="img-circle" />
 
                 <p>
-                   Developing fast and responsive websites optimzed for all mobile and tablets. 
+                   Developing fast and responsive websites optimzed for all mobile and tablets so you can reach more clients faster.
                 </p>
 
                 <a href="#/" class="btn btn-danger btn-block">Click. Edit. Repeat</a>
@@ -188,10 +188,10 @@
             <!--for 3 columns, sm to stay in its layout-->
             <div class="panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Deloy & Upload  </h3>
+                    <h3 class="panel-title">Deploy & Upload  </h3>
                 </div>
                 <!-- end panel heading-->
-                <img src="images/badge_music.jpg" alt="Bootstrap3" class="img-circle" />
+                <img src="images/badge_cloud.jpg" alt="Bootstrap3" class="img-circle" />
 
                 <p>
                     Websites are optimzed for better Search Engine rankings so that your business is not lost at the 3<sup>rd</sup> page of their website
@@ -206,135 +206,15 @@
 
     </div>
     <!-- features-->
-    <div class="row" id="moreInfo">
-        <div class="col-sm-6">
+
+    <div class="row" id="moreInfo" style="text-align:center;">
+        <div class="col-sm-4">
             <h3>More Info!</h3>
-            <div class="tabbable">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab1" data-toggle="tab">Info</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Location</a></li>
-                </ul>
-                <!-- end Nav nav-tabs-->
-
-                <div class="tab-content">
-                    <div class="tab-pane active" id="tab1">
-                        <h4>More info<small> about me</small></h4>
-
-                        <img src="images/srg140.jpg" class="thumbnail pull-left" />
-
-                        <p>
-                            Free Lancer Web designer. Guitarist, Keyboards, Photographer, Apple Lover, Hardcore Linkin Park fan, Adventure freak, Gadget Lover and Techie
-                        </p>
-
-                        <!--<p>
-                                Shabby chic vegan meditation occupy, food truck American Apparel pop-up. Hoodie Tumblr meditation,
-                                drinking vinegar McSweeney's lomo paleo selfies hashtag organic 90's health goth. Next level four
-                                dollar toast before they sold out readymade brunch skateboard. Portland Intelligentsia cronut vinyl.
-                                Fingerstache tousled cold-pressed try-hard 3 wolf moon fap. Blog heirloom irony, occupy plaid Tumblr
-                                organic bitters. VHS kogi mlkshk American Apparel, gluten-free hella wolf messenger bag before they sold out.
-                            </p>-->
-                        <hr />
-
-                        <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span>Dummy Form</a>
-
-                        <div class="modal fade" id="myModal">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content">
-
-                                    <div class="modal-header">
-
-                                        <button class="close" data-dismiss="modal">&times;</button>
-
-                                        <h4 class="modal-title">Modal Window</h4>
-                                        <div class="modal-body">
-
-                                            <h4>Text in Modal</h4>
-                                            <p>Shabby chic vegan meditation occupy, food truck American Apparel pop-up. Hoodie Tumblr meditation, drinking vinegar McSweeney's lomo p</p>
-
-                                            <h4>Popovers in Modal</h4>
-                                            <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it" data-content="I knew you would">Dont Click this button</a>
-
-                                            <h4>Tooltips in a modal</h4>
-                                            <a href="#" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should
-                                                <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
-
-                                                <hr />
-                                            <p><small class="text-muted">PS. This form doesn't do anything</small></p>
-
-                                            <form class="form-horizontal">
-                                                <div class="form-group">
-                                                    <label class="col-lg-2 control-label" for="inputName">Name</label>
-                                                    <div class="col-lg-10">
-                                                        <input class="form-control" id="inputName" placeholder="Name" type="text">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                                                    <div class="col-lg-10">
-                                                        <input class="form-control" id="inputEmail" placeholder="Email" type="email">
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label class="col-lg-2 control-label" for="inputMessage">Message</label>
-                                                    <div class="col-lg-10">
-                                                        <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-                                                        <button class="btn btn-success pull-right" type="submit">Send!</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <!--end form-->
-
-                                        </div>
-                                        <!-- end modal-body-->
-                                        <div class="modal-footer">
-                                            <button class="btn btn-primary" type="button">Save Changes    </button>
-                                            <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-
-                                        </div>
-                                        <!--end Modal-footer-->
-                                    </div>
-                                    <!-- end modal-header-->
-                                </div>
-                                <!-- end modal-content-->
-
-                            </div>
-                            <!-- end modal-dialog-->
-
-                        </div>
-                        <!-- end myModal-->
-                    </div>
-                    <!--end Tab-pane-->
-
-                    <div class="tab-pane" id="tab2">
-                        <h4><span class="glyphicon glyphicon-map-marker"></span>Find me on the globe<small> or drop me an email</small></h4>
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95108.72319009459!2d-87.68718017306144!3d41.846649753245906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C+IL!5e0!3m2!1sen!2sus!4v1428616671450" width="100%" height="200" frameborder="0" style="border: 0"></iframe>
-
-                        <!--
-                            <p>
-                                Couldn't have asked for better University to study my Master's in midst of beautful city of Chicago.
-                            </p>
-                            -->
-
-
-                    </div>
-                    <!--end tab-pane-->
-
-
-
-                </div>
-                <!-- tab-content-->
-
-            </div>
-            <!--End tabbable-->
+            <img src="images/Shreyas.png" style="margin:0 auto;" alt="Shreyas"/>
         </div>
         <!--end col-sm-6-->
 
-        <div class="col-sm-6" id="aboutSrg">
+        <div class="col-sm-8" id="aboutSrg">
 
             <!--
                 <h3>Current Job Profile</h3>

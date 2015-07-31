@@ -98,7 +98,7 @@
 
                 <div class="col-sm-4">
                     <h6>About Me</h6>
-                    <p>Actively seeking Summer Internship opportunities in the field of Software Engineering</p>
+                    <p>Like my work? Hire me!</p>
                 </div><!-- end col-sm-4-->
 
                 <div class="col-sm-2">
@@ -114,10 +114,11 @@
                 <div class="col-sm-2">
                     <h6>Follow Me</h6>
                     <ul class="list-unstyled">
-                        <li><a href="https://twitter.com/shreyasgaonkar" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.facebook.com/shreyas.gaonkar" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.youtube.com/user/lpfireheart" target="_blank">YouTube</a></li>
                         <li><a href="https://www.linkedin.com/in/shreyasgaonkar" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/shreyasgaonkar" target="_blank">Twitter</a></li>
+                        <li><a href="https://angel.co/shreyasgaonkar" target="_blank">AngelList</a></li>
+                        <li><a href="https://www.youtube.com/user/lpfireheart" target="_blank">YouTube</a></li>
+                        
 
                     </ul>
                 </div><!-- end col-sm-2-->
