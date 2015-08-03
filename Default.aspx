@@ -1,7 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>Home - Shreyas Gaonkar</title>
+
+    <title>Home | shreyasg.com</title>
+
+    <link rel="canonical" href="http://shreyasg.com">
+    <meta name="description" content="shreyasg.com - Personal portfolio website of Shreyas Gaonkar, Front End Web Developer. Explore more info about me.">
+    <meta property="og:title" content="Home | shreyasg.com"/>
+    <meta name="title" content="Home | shreyasg.com"/>
+    <meta property="og:description" content="shreyasg.com - Personal portfolio website of Shreyas Gaonkar, Front End Web Developer. Explore more info about me."/>
+    
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -114,7 +122,7 @@
                         var counter = 1;
                         var elem = document.getElementById("changeText");
                         elem.innerHTML = text[0];
-                        var refreshIntervalI = setInterval(change, 2000);
+                        var refreshIntervalI = setInterval(change, 2500);
                         function change() {
                             elem.innerHTML = text[counter];
                             counter++;
@@ -124,7 +132,7 @@
 
                     <!-- Changing Text Ends -->
                     <br />
-                    I design responsive websites optimized for desktops and mobile platforms. I love coding and playing around with Photohop. When I am not at School or designing websites,
+                    I design responsive websites optimized for desktops and mobile platforms. I love coding and playing around with Photoshop. When I am not at School or designing websites,
                     I enjoy Photography and playing Music.<br /> Learn more about me by clicking the link below.
                 </p>
 
@@ -209,13 +217,13 @@
     <hr>
 
     <div class="row" id="moreInfo" style="text-align:center;">
-        <div class="col-sm-4">
+        <div class="col-sm-3 hidden-sm">
             <h3>More Info!</h3>
             <img src="images/Shreyas.png" style="margin:0 auto;" alt="Shreyas"/>
         </div>
         <!--end col-sm-6-->
 
-        <div class="col-sm-8" id="aboutSrg">
+        <div class="col-sm-9" id="aboutSrg">
 
             <!--
                 <h3>Current Job Profile</h3>
@@ -231,11 +239,11 @@
                 </a>
                 <a href="#/" class="list-group-item">
                     <h4 class="list-group-item-heading">Bachelor of Engineering, Mumbai University <small>Electronics Engineering</small></h4>
-                    <p class="list-group-item-text">The carrot is a root vegetable, usually orange in colour, though purple, red, white, and yellow varieties exist. It has a crisp texture when fresh.</p>
+                    <p class="list-group-item-text"><strong>Related Coursework</strong>: Web Development, Embedded Systems and Front End VLSI Module.</p>
                 </a>
                 <a href="#/" class="list-group-item">
                     <h4 class="list-group-item-heading">Skills</h4>
-                    <p class="list-group-item-text">C, C#, C++, Java, VHDL, Verilog, JavaScript, JQuerry, HTML, CSS, SQL, ASP.net, Bootstrap and (currently learning) Ruby on Rails.</p>
+                    <p class="list-group-item-text">C, C++, Java, JavaScript, JQuerry, HTML, CSS, SASS, SCSS, SQL, C#, GitHub, ASP.NET, Bootstrap, Microsoft Visual Studio, Android Studio, AWS, FileZilla, WinSCP and (currently learning) Python, Ruby on Rails & AngularJS</p>
                 </a>
             </div>
             <!-- list-group -->
