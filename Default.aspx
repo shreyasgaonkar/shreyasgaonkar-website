@@ -128,7 +128,7 @@
 
                 <!-- AlertMe tag -->
                 <!--<a href="#" class="btn btn-large btn-primary" id="alertMe">Poke !</a>-->
-                <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank" class="btn btn-link btn-primary">View Resume</a>
+                <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
             </div>
             <!-- End Well-->
 
@@ -159,7 +159,6 @@
 
                 <p>Start from blank canvas and design as per the client requirements including UI/UX, Typography and Color-Scheme</p>
 
-                <a href="#/" class="btn btn-warning btn-block">HTML5, CSS3, Bootstrap 3</a>
             </div>
             <!--end panel-->
         </div>
@@ -178,7 +177,6 @@
                    Developing fast and responsive websites optimzed for all mobile and tablets so you can reach more clients faster.
                 </p>
 
-                <a href="#/" class="btn btn-danger btn-block">Click. Edit. Repeat</a>
             </div>
             <!--end panel-->
         </div>
@@ -197,7 +195,7 @@
                     Websites are optimzed for better Search Engine rankings so that your business is not lost at the 3<sup>rd</sup> page of their website
                 </p>
 
-                <a href="#/" class="btn btn-info btn-block">EADGBe</a>
+               
             </div>
             <!--end panel-->
         </div>
@@ -206,6 +204,7 @@
 
     </div>
     <!-- features-->
+    <hr />
 
     <div class="row" id="moreInfo" style="text-align:center;">
         <div class="col-sm-4">

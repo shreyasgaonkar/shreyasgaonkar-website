@@ -11,7 +11,9 @@ Notes:	 Hand coded for Udemy.com
 #cursor a:hover{
    cursor:default;
 }
-
+#changeText{
+    color:#357EBD;
+}
 /* --------------------------------------
    Layout
    -------------------------------------- */

@@ -68,7 +68,7 @@
 
                 </button>
 
-                <a class="navbar-brand" href="#/"><img src="images/test-logo.png" alt="Shreyas Gaonkar logo" title="Shreyas Gaonkar"/></a>
+                <a class="navbar-brand" href="Default.aspx"><img src="images/test-logo.png" alt="Shreyas Gaonkar logo" title="Shreyas Gaonkar"/></a>
 
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
