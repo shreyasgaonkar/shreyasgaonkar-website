@@ -110,25 +110,27 @@
                     <!-- Changing text -->
                     <span id="changeText"></span>
                     <script type="text/javascript">
-                        var text = ["Web Developer.", "UX/UI Designer.", "Programmer.", "a Grad Student.", "Shreyas."];
-                        var counter = 0;
+                        var text = ["Web Developer.", "UX/UI Designer.", "Grad Student.", "Shreyas."];
+                        var counter = 1;
                         var elem = document.getElementById("changeText");
-                        var refreshIntervalI = setInterval(change, 1500);
+                        elem.innerHTML = text[0];
+                        var refreshIntervalI = setInterval(change, 2000);
                         function change() {
                             elem.innerHTML = text[counter];
                             counter++;
                             if (counter >= text.length) { clearInterval(refreshIntervalI); }
                         }
                     </script>
-                    <!-- Changing Text Ends -->
 
-                    I design websites with HTML5, CSS3, JQuery and SQL for desktops and optimized to mobile platforms.
-                        I'm an amateur photographer in my spare time along with some skills in playing guitar and keyboards. Learn more about me by clicking the link below.
+                    <!-- Changing Text Ends -->
+                    <br />
+                    I design responsive websites optimized for desktops and mobile platforms. I love coding and playing around with Photohop. When I am not at School or designing websites,
+                    I enjoy Photography and playing Music.<br /> Learn more about me by clicking the link below.
                 </p>
 
                 <!-- AlertMe tag -->
                 <!--<a href="#" class="btn btn-large btn-primary" id="alertMe">Poke !</a>-->
-                <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank" class="btn btn-primary">View Resume</a>
+                <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank" class="btn btn-primary">About Me</a>
             </div>
             <!-- End Well-->
 
@@ -141,7 +143,7 @@
 
     <div class="row" id="featuresHeading">
         <div class="col12">
-            <h2>How</h2>
+            <h2>How it's Done</h2>
 
         </div>
         <!-- end col12-->
@@ -204,7 +206,7 @@
 
     </div>
     <!-- features-->
-    <hr />
+    <hr>
 
     <div class="row" id="moreInfo" style="text-align:center;">
         <div class="col-sm-4">
