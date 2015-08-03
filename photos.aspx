@@ -68,11 +68,11 @@
 
                 </button>
 
-                <a class="navbar-brand" href="/"><img src="images/test-logo.png" alt="Shreyas Gaonkar logo"/></a>
+                <a class="navbar-brand" href="#/"><img src="images/test-logo.png" alt="Shreyas Gaonkar logo" title="Shreyas Gaonkar"/></a>
 
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <li class="active">
                             <a href="Default.aspx"><span class="glyphicon glyphicon-home"> Home</span></a>
                         </li>
                         <li class="dropdown">
@@ -82,7 +82,7 @@
                                     <a href="docs/Shreyas Gaonkar Resume.pdf" target="_blank">Resume</a>
                                 </li>
                                 <li>
-                                    <a href="#">Papers</a>
+                                    <a href="technical-paper.aspx">Papers</a>
                                 </li>
                                 <li>
                                     <a href="photos.aspx">Photos</a>
@@ -93,49 +93,25 @@
 
                                 <li class="divider"></li>
                                 <li class="dropdown-header">
-                                    More Services
+                                    Find me at
                                     <!-- Just to give idea what is going to show up next-->
                                 </li>
                                 <li>
-                                    <a href="#">Music</a>
+                                    <a href="https://github.com/shreyasgaonkar" target="_blank">GitHub</a>
                                 </li>
                                 <li>
-                                    <a href="#">Projects</a>
+                                    <a href="project.aspx">Projects</a>
                                 </li>
                             </ul><!-- End dropdown-menu-->
                         </li>
                     </ul>
 
-                    <form class="navbar-form pull-left">
-                        <input type="text" class="form-control" placeholder="Search this site.." id="searchInput" />
-                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search "></span></button>
-                    </form>
-                    <ul class="nav navbar-nav pull-right">
-                        <!-- pull-right is float right-->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul><!-- End nav pull-right-->
+                    
                 </div><!--end NavCollapse-->
             </div>
         </div><!--End Nav Div-->
         
-        <div class="content" style="margin-top:50px;">
+        <div class="content" style="margin-top:70px;">
 				
 				<div id="rg-gallery" class="rg-gallery">
 					<div class="rg-thumbs">
@@ -182,7 +158,6 @@
         
        
 
-            <hr />
           
         </div><!--End container-->
         
