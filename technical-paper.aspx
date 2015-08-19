@@ -15,7 +15,7 @@
 
                 <p class="lead">
                     <!--LEading text stands out, makes it awesome-->
-                    Please feel free to explore more about my technical paper in VLSI and Embedded Systems.
+                    Couple of my research papers in the fields of VLSI and Embedded Systems.
                 </p>
                 <div class="row" id="center">
 
